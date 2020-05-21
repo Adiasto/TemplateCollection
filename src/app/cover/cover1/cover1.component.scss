@@ -1,0 +1,54 @@
+.parent{
+    animation: background-blend 5s 1,pulse 1s 4s 1;
+    animation-fill-mode: forwards;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Berkshire Swash', cursive;    // left: 50%;
+}
+
+@keyframes background-blend{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: rgb(154, 255, 161);
+    }
+}
+
+.image-styles{
+    height: 100vh;
+    mix-blend-mode: multiply;
+}
+
+.bg-names{
+    font-size: 70px;
+    color: white;
+    font-family: 'Berkshire Swash', cursive;    // left: 50%;
+}
+
+.alive-section{
+    animation: tada 1s 2s infinite;
+}
+
+.top-text{
+    width: 100%;
+    margin-top: 12%;
+    text-align: center;
+}
+
+.type{
+    font-size: 50px;
+    color: rgb(226, 28, 77);
+    width: 0;
+    animation-fill-mode: forwards;
+    font-family: 'Berkshire Swash', cursive;    // left: 50%;
+    // margin-top: 50px;
+}
+
+.type1{
+    animation-delay: 2.5s;
+}
+
+.bottom-text{
+    bottom: 30px;
+}

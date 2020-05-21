@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: 'Amaranth', sans-serif;
+    color: black;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.top{
+    top:0;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.typewriter-with-caret {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  .typewriter-without-caret {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end)
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .bottom{
+      position: absolute;
+      bottom: 0;
+  }
+
+  .center-text{
+      width: 100%;
+      text-align: center;
+  }
+
+  .soft-edge{
+    // -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    // -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    // box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);  
+}
+
+.anim-delay-1{
+    animation-delay: 1s !important;
+}
+
+.anim-delay-2{
+    animation-delay: 1s !important;
+}
+
+.anim-delay-3{
+    animation-delay: 1s !important;
+}
+
+.anim-delay-4{
+    animation-delay: 1s !important;
+}
+
+.links{
+    color: rgb(158, 39, 255);
+}
