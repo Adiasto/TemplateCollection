@@ -21,7 +21,9 @@
     "@angular/router": "~8.2.14",
     "animate.css": "^4.1.0",
     "bulma": "^0.8.0",
+    "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",
+    "simple-parallax-js": "^5.4.0",
     "tslib": "^1.10.0",
     "wow.js": "^1.2.2",
     "zone.js": "~0.9.1"

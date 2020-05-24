@@ -1,0 +1,14 @@
+<div class="parent wow">
+    <!-- <img class="full-image" id="story-image" src="../../../assets/images/story-image.jpg"/> -->
+    <div class="content">
+        <div class="title center">
+            Our Story
+        </div>
+        <div class="animate__animated animate__flipInX center lines" [id]="'story-line-'+i" 
+        *ngFor="let line of storyLines;let i=index;">
+            {{line}}
+        </div>
+    </div>
+</div>
+
+<!-- [ngStyle]="{'background-image':'url(../../../assets/images/floral-white.jpg)'}" -->

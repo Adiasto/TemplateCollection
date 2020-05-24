@@ -1,0 +1,58 @@
+<div class="parent" [ngStyle]="{'background-color':eventList[activeEvent].color}">
+    <div class="events-holder columns no-margin">
+        <div *ngFor="let event of eventList;let i=index" class="event column no-padding relative"
+            [ngClass]="{'active':activeEvent==i}">
+            <!-- <div class="overlay" [ngStyle]="{'z-index':1000}"> -->
+            <img class="event-image" [src]="event.image" [ngClass]="{'active':activeEvent==i}"
+                (click)="selectElement(i)" />
+            <div class="name">
+                {{event.name}}
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div *ngFor="let event of eventList;let i=index">
+        <div class="event-details columns" *ngIf="activeEvent==i">
+            <div class="left-section column is-one-third">
+                <div class="info-section">
+                    <i class="labels fa fa-calendar-alt" [ngStyle]="{'color':'rgb(235, 0, 125)'}"></i>
+                    <div class="value inline-block wow animate__animated animate__fadeInLeft">
+                        12 Dec 2022, 2pm
+                    </div>
+                </div>
+                <div class="info-section">
+                    <i class="labels fa fa-map-marker-alt" [ngStyle]="{'color':'rgb(235, 0, 125)'}"></i>
+                    <div class="value inline-block wow animate__animated animate__fadeInLeft">
+                        Ashtavinayak aprtments, Tofkhana, Ahemadnagar.
+                        <div class="sub-text">
+                            <a target="_blank"
+                                href="https://www.google.com/maps/place/Mahavir+Medical+%26+Gereral+Store/@19.0987648,74.7339854,20z/data=!4m18!1m12!4m11!1m3!2m2!1d74.7341464!2d19.0986793!1m6!1m2!1s0x3bdcb0627d82b669:0x9b4d4515b7cf8e83!2sMahavir+Medical+%26+Gereral+Store,+Sarjepura+city,+Ahmednagar,+Maharashtra+414001!2m2!1d74.7342503!2d19.098852!3m4!1s0x3bdcb0627d82b669:0x9b4d4515b7cf8e83!8m2!3d19.098852!4d74.7342503">
+                                <i class="fa fa-map-marked-alt" [ngStyle]="{'color':'rgb(235, 0, 125)'}"></i>
+                                Open in map
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section column">
+                <div class="title center">
+                    Engagement Ceremony
+                </div>
+                <div class="wow animate__animated animate__fadeInRight">
+                    <div class="ceremony-para">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From the first moment, our eyes met,We knew this joyous day would come, 
+                        Announcing our engagement, We have found the love we have been seeking our whole lives, 
+                        Come and be a part of our engagement ceremony as we embark upon our new journey together.
+                        We want you to witness this moment when we commit for lifetime engagement into each and
+                        everything that happens in our life ahead.
+                        <br>
+                        <br>
+                        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enjoy delicious snacks post engagement ceremony. -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="divider"></div> -->
+    </div>
+</div>

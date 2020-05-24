@@ -1,0 +1,41 @@
+.parent{
+    height: 100vh;
+    background-color: rgb(253, 240, 255);
+    padding: 30px;
+    width: 100vw;
+    position: relative;
+    // overflow-y: auto;
+}
+
+.title{
+    font-size: 25px;
+}
+
+.content{
+    z-index: 1000;
+    top: 0;
+}
+
+.full-image{
+    height: 100%;
+    width: 100%;
+    background-blend-mode: screen;
+}
+
+.lines{
+    // float: left;
+    padding:20px 0;
+    font-size: 20px;
+    // width: 0;
+    // display: block;
+    // visibility: hidden;
+    animation-fill-mode: forwards;
+    color: rgb(255, 30, 218);
+    // display: none;
+}
+
+.moving{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
