@@ -25,7 +25,17 @@ export class OurStory1Component implements OnInit, AfterViewInit {
   ];
 
   ngOnInit() {
-    
+    var heart=document.getElementById("moving-heart");
+    var heart1=document.getElementById("heart-trail1");
+    var heart2=document.getElementById("heart-trail2");
+    var heart3=document.getElementById("heart-trail3");
+    var heart4=document.getElementById("heart-trail4");
+
+    document.getElementById('story').addEventListener("mousemove",(e)=>{
+      heart.style.left = `${e.screenX-100}px` ;
+      heart.style.top = `${e.screenY-200}px`;
+      heart.style.filter = `hue-rotate(${e.screenX/2}deg)`;
+    })
   }
 
   ngAfterViewInit(): void {

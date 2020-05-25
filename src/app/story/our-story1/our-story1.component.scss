@@ -1,14 +1,46 @@
 .parent{
-    height: 100vh;
-    background-color: rgb(253, 240, 255);
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
     padding: 30px;
     width: 100vw;
     position: relative;
+    cursor: none;
+    background-size: cover;
+    background-blend-mode: multiply;
     // overflow-y: auto;
 }
 
+// .parent::before{
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     right: 0;
+//     background-repeat: repeat;
+//     height: 10px;
+//     background-size: 20px 20px;
+//     background-image:
+//       radial-gradient(circle at 10px -5px, transparent 12px, rgba(255, 255, 255, 0.432) 13px);
+//       transform: scale(5) translateY(-30px);
+//   }
+//   .parent::after{
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: 10px;
+//     right: 0;
+//     background-repeat: repeat;
+//     height: 15px;
+//     background-size: 40px 20px;
+//     background-image:
+//       radial-gradient(circle at 10px 15px, rgba(255, 255, 255, 0.432) 12px, transparent 13px);
+//       transform: scale(5) translateY(-30px);
+//   }
+
 .title{
     font-size: 25px;
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(39, 0, 0);
 }
 
 .content{
@@ -30,7 +62,9 @@
     // display: block;
     // visibility: hidden;
     animation-fill-mode: forwards;
-    color: rgb(255, 30, 218);
+    color: rgb(255, 0, 128);
+    font-family: 'Berkshire Swash', cursive;
+
     // display: none;
 }
 
@@ -38,4 +72,15 @@
     height: 100px;
     width: 100px;
     background-color: red;
+}
+
+.heart{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    z-index: 1;
+    opacity: 0.6;
+    animation: heartBeat 1s infinite;
 }
