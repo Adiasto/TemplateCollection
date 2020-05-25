@@ -10,6 +10,7 @@ import { Cover1Component } from './cover/cover1/cover1.component';
 import { BgInfo1Component } from './bg-info/bg-info1/bg-info1.component';
 import { OurStory1Component } from './story/our-story1/our-story1.component';
 import { Events1Component } from './events/events1/events1.component';
+import { Map1Component } from './map-view/map1/map1.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Events1Component } from './events/events1/events1.component';
     Cover1Component,
     BgInfo1Component,
     OurStory1Component,
-    Events1Component
+    Events1Component,
+    Map1Component
   ],
   imports: [
     BrowserModule,

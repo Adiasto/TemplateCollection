@@ -1,0 +1,90 @@
+.parent{
+    // padding: 40px ;
+    // padding-top: 20px;
+}
+
+#map{
+    height: 100vh;
+    width: 50vw;
+    background-color: rgb(238, 238, 238);
+
+    @media (max-width:700px) {
+        height: 100vw;
+        width: 100vw;
+    }
+    display: inline-block;
+}
+
+.details{
+    width: 48vw;
+    min-height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 20px;
+    @media (max-width:700px) {
+        width: 100vw;
+    }
+
+    .title{
+        font-size: 20px;
+        color: rgb(37, 0, 0);
+    }
+
+    .venue-description{
+        width: 80%;
+        color: rgb(75, 75, 75);
+    }
+
+    .venue-address{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 20px;
+    }
+
+    .marker-pin{
+        font-size: 40px;
+        display: block;
+        margin-top: 50px;
+        color: rgb(35, 86, 255);
+    }
+}
+
+.suggestion-cta{
+    display: block;
+    margin: 0 auto;
+    bottom: 30px;
+    // margin-top: 30px;
+
+    &:hover{
+            color: rgb(35, 86, 255);
+    }
+
+   
+    .fa{
+        margin: 15px 4px;
+        color: inherit;
+    }
+
+    .cta{
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-size: 15px;
+        background-color: white;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: 700;
+
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.time-to-the-event{
+    font-size: 16px;
+    padding: 50px 0;
+    color: rgb(255, 0, 106);
+    animation: pulse 1s infinite;
+}

@@ -108,3 +108,11 @@
 .links{
     color: rgb(158, 39, 255);
 }
+
+.card{
+    padding: 20px;
+    border-radius: 20px;
+    &:hover{
+        box-shadow: 2px 2px 5px 0px rgba(192, 191, 191, 0.404);
+    }
+}
