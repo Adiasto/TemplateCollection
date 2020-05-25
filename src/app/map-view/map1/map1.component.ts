@@ -10,7 +10,7 @@ export class Map1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.initMaps();
+    this.initMaps();
   }
 
   initMaps(){
