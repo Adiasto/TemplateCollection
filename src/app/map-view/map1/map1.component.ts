@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var google;
+
 @Component({
   selector: 'app-map1',
   templateUrl: './map1.component.html',
@@ -8,11 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class Map1Component implements OnInit {
 
   constructor() { }
-
   ngOnInit() {
     this.initMaps();
   }
-
+  
   initMaps(){
     var script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAxYDoKS-oevZ1r52VdNG5guFM055hW0iM&callback=initMap';
