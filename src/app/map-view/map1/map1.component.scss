@@ -28,6 +28,7 @@
     .title{
         font-size: 20px;
         color: rgb(37, 0, 0);
+        font-family: 'Berkshire Swash', cursive;
     }
 
     .venue-description{
@@ -82,9 +83,25 @@
     }
 }
 
+.travel-suggestion{
+    width: 100%;
+    bottom: 20px;
+}
+
 .time-to-the-event{
     font-size: 16px;
-    padding: 50px 0;
-    color: rgb(255, 0, 106);
-    animation: pulse 1s infinite;
+    margin-top: 50px;
+    // padding: 50px 0;
+
+    .title{
+        font-size: 20px;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    .value{
+        color: rgb(255, 0, 106);
+        animation: pulse 1s infinite;
+        font-weight: 700;
+        font-size: 18px;
+    }
 }
