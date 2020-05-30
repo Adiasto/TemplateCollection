@@ -12,7 +12,7 @@ export class Events1Component implements OnInit {
   eventList = [
     {
       image: "../../../assets/images/events/engagement.jpg",
-      color: "rgb(255, 243, 243)",
+      color: "rgb(240, 255, 236)",
       textColor: {
         primary: "rgb(44, 0, 24)",
         secondary: "rgb(235, 0, 125)",
@@ -22,17 +22,17 @@ export class Events1Component implements OnInit {
     },
     {
       image: "../../../assets/images/events/haldi.jpg",
-      color: "rgb(255, 254, 243)",
+      color: "rgb(240, 255, 236)",
       name: "Haldi"
     },
     {
       image: "../../../assets/images/events/dance.jpg",
-      color: "rgb(243, 245, 255)",
+      color: "rgb(240, 255, 236)",
       name: "Dance"
     },
     {
       image: "../../../assets/images/events/pooja.jpg",
-      color: "rgb(248, 255, 243)",
+      color: "rgb(240, 255, 236)",
       name: "Pooja"
     },
     {
